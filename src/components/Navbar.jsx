@@ -1,16 +1,30 @@
-import '../styles/Navbar.css';
+import '../styles/Navbar.css'
+
 
 function Navbar() {
     return (
-        <nav className="custom-navbar shadow-lg rounded-pill mx-auto mt-3 px-4 py-2">
-            <div className="d-flex align-items-center justify-content-center gap-4">
-                <a className="nav-link active text-light fw-semibold" href="#">Home</a>
-                <a className="nav-link text-light fw-semibold" href="#">About Me</a>
-                <a className="nav-link text-light fw-semibold" href="#">Project</a>
-                <a className="nav-link text-light fw-semibold">Contact</a>
+        <nav class="navbar navbar-expand-lg bg-body-transparent shadow-lg w-100">
+            <div class="container">
+                <a class="navbar-brand" href="#">Yga Krniawan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Project</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     )
 }
 
-export default Navbar;
+export default Navbar

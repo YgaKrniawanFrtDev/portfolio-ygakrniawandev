@@ -1,39 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
 
-.custom-navbar {
-  width: 420px; /* sedikit lebih lebar biar lega */
-  height: 70px;
-  display: flex;               /* flex container */
-  justify-content: center;     /* horizontal center */
-  align-items: center;         /* vertical center */
-  text-align: center;          /* jaga text rata tengah */
-  position: fixed;
-  top: 50px; /* jarak dari atas */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.08); /* transparan */
-  backdrop-filter: blur(12px); /* blur kaca */
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3); /* border tipis */
-  border-radius: 50px; /* rounded pill */
-  z-index: 1000;
-  padding: 8px 24px;
-  transition: all 0.3s ease-in-out;
-  font-family: "Poppins", sans-serif;
-}
 
-.custom-navbar:hover {
-  background: rgba(255, 255, 255, 0.15); 
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
 
-.custom-navbar .nav-link {
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease-in-out;
-}
-
-.custom-navbar .nav-link:hover {
-  color: #ffcc70; /* warna pas hover */
+.nav-link, .navbar-brand {
+    font-family: poppins;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 800;
 }
