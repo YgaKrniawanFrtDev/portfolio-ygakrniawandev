@@ -1,30 +1,68 @@
-import '../styles/Navbar.css'
-
+import { useEffect, useState } from "react";
+import "../styles/Navbar.css";
 
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <nav class="navbar navbar-expand-lg bg-body-transparent shadow-lg w-100">
-            <div class="container">
-                <a class="navbar-brand" href="#">Yga Krniawan</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav
+            className={`navbar navbar-expand-lg shadow-lg w-100 fixed-top ${scrolled ? "navbar-scrolled" : "bg-body-transparent"
+                }`}
+        >
+            <div className="container">
+                <a className="navbar-brand" href="#">Portfolio</a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="#">
+                                Beranda
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">
+                                Tentang saya
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Project</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">
+                                Proyek
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">
+                                Kontak
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

@@ -11,12 +11,46 @@ body {
 .hero-section {
   background-color: white !important;
   height: 65vh;
-  
+
 }
 
 
 
 .about-section {
   background-color: black !important;
+  height: 70vh;
+}
+
+
+.Text-scroll {
+  font-family: poppins;
+  font-weight: 800;
+}
+
+
+.about-text-content{
+  background-color: white !important;
+  height: 80vh;
+
+
+}
+
+
+
+.education-section {
+  background-color: black;
   height: 100vh;
+}
+
+
+.edu {
+    font-family: poppins;
+    max-width: 60%;
+    font-weight: 800;
+    font-size: 100px;
+}
+
+
+.hr {
+  width: 60%;
 }

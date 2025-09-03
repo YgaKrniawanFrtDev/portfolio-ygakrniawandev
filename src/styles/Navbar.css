@@ -7,3 +7,14 @@
     color: rgb(0, 0, 0) !important;
     font-weight: 800;
 }
+
+
+.bg-body-transparent {
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.navbar-scrolled {
+  background: rgb(255, 255, 255); 
+  transition: background 0.3s ease;
+}

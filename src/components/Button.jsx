@@ -6,7 +6,7 @@ function Button() {
         <>
             <div className="button-content">
                 <button className='rounded-pill'>
-                    Scroll Down
+                    Lihat Lanjut
                 </button>
             </div>
         </>
