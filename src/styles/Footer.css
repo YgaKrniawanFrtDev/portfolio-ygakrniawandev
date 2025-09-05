@@ -1,0 +1,60 @@
+.footer-section {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.footer-logo {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: #2e54a7;
+}
+
+.hr-full {
+    border: none;
+    border-top: 2px solid #2e54a7;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin: 10px 0;
+}
+
+.hr-mini {
+    border: none;
+    border-top: 2px solid #2e54a7;
+    width: 60%;
+    margin: 5px 0;
+}
+
+.hr-contact {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: 5px 0;
+}
+
+.footer-text {
+    color: #312323;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    max-width: 400px;
+}
+
+.contact h3,
+.sosmed h3 {
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #2e54a7;
+    margin-bottom: 10px;
+}
+
+.contact p,
+.sosmed p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: #312323;
+    margin: 5px 0;
+}

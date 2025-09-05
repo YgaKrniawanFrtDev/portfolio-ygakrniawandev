@@ -39,17 +39,27 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">
+                            <a className="nav-link active" aria-current="page" href="#hero-section">
                                 Beranda
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#about-text-content">
                                 Tentang saya
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#education-section">
+                                Pendidikan
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#skill-section">
+                                Skill
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#project-section">
                                 Proyek
                             </a>
                         </li>

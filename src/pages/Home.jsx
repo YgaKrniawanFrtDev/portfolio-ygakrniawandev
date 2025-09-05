@@ -14,6 +14,7 @@ import CardSkills from "../components/CardSkills"
 import { DataSkills } from "../data/DataSkills"
 import ProjectCard from "../components/ProjectCard"
 import { ProjectData } from "../data/ProjectData"
+import Footer from "../components/Footer"
 function Home() {
     const containerRef = useRef(null);
     return (
@@ -21,7 +22,7 @@ function Home() {
             <section className="navbar">
                 <Navbar />
             </section>
-            <section className="hero-section">
+            <section className="hero-section" id="hero-section">
                 <div className="hero-content d-flex gap-2">
                     <div className="image mt-5" data-aos="zoom-out">
                         <ImageProfile />
@@ -31,7 +32,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="about-section">
+            <section className="about-section" id="about-section">
                 <div className="about-content">
                     <TextScroll
                         texts={['FrontEnd Developer', 'Ui UX Design']}
@@ -45,7 +46,7 @@ function Home() {
                     ))}
                 </div>
             </section>
-            <section className="about-text-content" data-aos="fade-up">
+            <section className="about-text-content" data-aos="fade-up" id="about-text-content">
                 <div className="about-me">
                     <div className="about-me-content d-flex gap-3 justify-content-around mt-5" data-aos="zoom-out">
                         <div className="about-me-text p-5">
@@ -60,7 +61,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="education-section" data-aos="fade-down" data-aos-duration="2000">
+            <section className="education-section" data-aos="fade-down" data-aos-duration="2000" id="education-section">
                 <div className="education-content p-5">
                     <h3 className='text-light edu ms-3' data-oas="fade-right">Pendidikan.</h3>
                     <hr className="text-light hr" />
@@ -71,7 +72,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="skill-section" data-aos="zoom-in-up" data-aos-duration="2000">
+            <section className="skill-section" data-aos="zoom-in-up" data-aos-duration="2000" id="skill-section">
                 <div className="skill-section-content p-5 mx-auto">
                     <h3 className="text-dark text-center mx-auto skill-text w-100">
                         Skills Experience.
@@ -89,7 +90,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="project-section">
+            <section className="project-section" id="project-section">
                 <div className="project-content p-5 mx-auto ">
                     <h3 className="text-light text-center mx-auto skill-text w-100">
                         Project.
@@ -104,7 +105,11 @@ function Home() {
                             />
                         ))}
                     </div>
-
+                </div>
+            </section>
+            <section className="footer-section">
+                <div className="footer-content d-flex mx-start">
+                    <Footer />
                 </div>
             </section>
         </>
