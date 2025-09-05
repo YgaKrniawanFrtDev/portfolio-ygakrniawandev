@@ -1,0 +1,109 @@
+.skill-card {
+    margin: auto;
+    width: min(300px, 100%);
+    background-color: #755b5b;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #141417;
+}
+
+.skill-hero {
+    background-color: #7d6842;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(240, 229, 212);
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill-hero .skill-job-title {
+    margin: 2rem 0;
+    padding-right: 2rem;
+}
+
+.skill-job-title {
+    line-height: 1.3em;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.skill-icon {
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.skill-hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.skill-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.75rem 0.25rem;
+    row-gap: 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 340px) {
+    .skill-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.skill-job-summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+.skill-btn {
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.35rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #141417;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media (min-width: 340px) {
+    .skill-btn {
+        width: max-content;
+    }
+}
+
+.skill-actions {
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+}

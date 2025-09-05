@@ -18,7 +18,7 @@ body {
 
 .about-section {
   background-color: black !important;
-  height: 70vh;
+  height: 80vh;
 }
 
 
@@ -49,8 +49,74 @@ body {
     font-weight: 800;
     font-size: 100px;
 }
+.skill-text {
+    font-family: poppins;
+    max-width: 60%;
+    font-weight: 800;
+    font-size: 80px;
+}
 
 
 .hr {
   width: 60%;
 }
+
+
+.skill-section {
+  background-color: #e8e8e8;
+  height: 180vh;
+}
+
+
+.skill-content-card {
+  background-color: black;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+
+
+.project-section {
+    background-color: #151414;
+  height: 200vh;
+}
+
+
+.project-card-content {
+  max-width: 1700px; 
+}
+
+.card-project {
+  flex: 0 0 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+}
+
+
+.btn-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 14px;      /* lebih kecil */
+  font-weight: 500;
+  padding: 6px 16px;    /* lebih tipis */
+  border: none;
+  border-radius: 20px;  /* agak bulat */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn-gradient:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+

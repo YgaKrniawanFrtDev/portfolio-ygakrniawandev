@@ -1,19 +1,13 @@
-/* From Uiverse.io by janisar-hyder */ 
-.container-title {
-  text-align: center;
-  padding: 0 !important;
-  margin-bottom: 40px;
-  font-size: 40px;
-  color: #fff;
-  font-weight: 600;
-  line-height: 60px;
-}
-
 .card-education {
   max-width: 400px;
-  border: 0;
   width: 100%;
   margin-inline: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi */
+}
+
+.card-education:hover {
+  transform: scale(1.05) translateY(-5px);
+  /* box-shadow: 0px 15px 30px rgba(255, 238, 36, 0.3); glow kuning */
 }
 
 .container-card {
@@ -23,28 +17,20 @@
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
-  img {
-    margin-bottom: 32px;
-  }
+  transition: background 0.4s ease; 
 }
 
-.bg-yellow-box {
-  position: relative;
-}
-
-.bg-yellow-box::after {
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  content: "";
-  z-index: -1;
-  border-radius: 45px;
+.container-card:hover {
+  background: linear-gradient(71deg, #1a171c, #2c2c12, #1a171c);
 }
 
 .bg-yellow-box::after {
   background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  transition: opacity 0.3s ease;
+}
+
+.card-education:hover .bg-yellow-box::after {
+  opacity: 0.8;
 }
 
 .card-title {
@@ -55,6 +41,11 @@
   font-style: normal;
   font-size: 28px;
   padding-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.card-education:hover .card-title {
+  color: #ffee24;
 }
 
 .card-description {
@@ -63,4 +54,9 @@
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
   max-width: 470px;
+  transition: color 0.3s ease;
+}
+
+.card-education:hover .card-description {
+  color: hsla(0, 0%, 100%, 0.8); /* text lebih jelas saat hover */
 }
