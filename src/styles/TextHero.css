@@ -14,3 +14,19 @@
     font-family: poppins;
     font-size: 14px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .text-hero h1 {
+        font-size: 60px;
+        padding: 13px;
+    }
+
+    .text-hero p {
+        font-size: 15px;
+        padding: 13px;
+        max-width: 400px;
+        width: auto ;
+        text-align: start;
+    }
+}

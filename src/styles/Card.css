@@ -4,14 +4,12 @@
   --paragraph: hsl(0, 0%, 83%);
   --line: hsl(240, 9%, 17%);
   --primary: hsl(266, 92%, 58%);
-
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1.5rem;
   width: 19rem;
-
   background-color: hsla(240, 15%, 9%, 1);
   background-image: radial-gradient(at 88% 40%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
     radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
@@ -124,4 +122,11 @@
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(197, 107, 240, 0.6),
     inset 0 -2px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+@media  screen and (max-width: 767px) {
+  .card {
+    width: 25rem;
+  }
 }

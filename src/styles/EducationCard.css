@@ -1,6 +1,6 @@
 .card-education {
   max-width: 400px;
-  width: 100%;
+  width: auto;
   margin-inline: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* animasi */
 }
@@ -59,4 +59,18 @@
 
 .card-education:hover .card-description {
   color: hsla(0, 0%, 100%, 0.8); /* text lebih jelas saat hover */
+}
+
+
+@media screen and (max-width: 767px) {
+  .card-education {
+    height: 350px;
+  }
+  .container-card {
+    width: 400px;
+    padding: 20px;
+    height: auto;
+    margin-left: -50px;
+    justify-content: center;
+  }
 }

@@ -11,3 +11,17 @@
     max-width: 60%;
     font-weight: 200;
 }
+
+
+@media  screen and  (max-width: 767px) {
+    .text-header-about h3 {
+      font-size: 60px;
+    }
+
+    .text-desc-about p {
+        max-width: 100%;
+        width: auto;
+        text-align: start;
+        font-size: 20px;
+    }
+}

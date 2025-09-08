@@ -65,3 +65,9 @@
     color: #777;
     line-height: 1.4;
 }
+
+@media screen and (max-wdth: 767px){
+    .card {
+        width: 400px;
+    }
+}

@@ -55,7 +55,7 @@ function Home() {
                                 <ButtonScroll />
                             </span>
                         </div>
-                        <div className="about ` -me-image p-5" data-aos="fade-up">
+                        <div className="about-me-image p-5" data-aos="fade-up">
                             <ImageAbout />
                         </div>
                     </div>
@@ -95,7 +95,7 @@ function Home() {
                     <h3 className="text-light text-center mx-auto skill-text w-100">
                         Project.
                     </h3>
-                    <div className="project-card-content mt-5 p-5 d-flex flex-wrap gap-4 mx-auto justify-content-center">
+                    <div className="project-card-content mt-5 p-5 d-flex flex-wrap  gap-4 mx-auto justify-content-center">
                         {ProjectData.map((item) => (
                             <ProjectCard
                                 key={item.id}
