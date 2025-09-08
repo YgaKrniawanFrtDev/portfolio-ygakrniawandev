@@ -1,7 +1,7 @@
 export const DataCard = [
     {
         id: 1,
-        title: 'Experience Digital',
+        title: 'Digital Experience',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque molestie nunc vel vulputate. Fusce efficitur ut dui posuere placerat. ',
 
     },
@@ -20,6 +20,16 @@ export const DataCard = [
     {
         id: 4,
         title: 'Figma Experience',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque molestie nunc vel vulputate. Fusce efficitur ut dui posuere placerat. ',
+    },
+    {
+        id: 5,
+        title: 'PKL Experience',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque molestie nunc vel vulputate. Fusce efficitur ut dui posuere placerat. ',
+    },
+    {
+        id: 6,
+        title: 'Comming Soon?',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque molestie nunc vel vulputate. Fusce efficitur ut dui posuere placerat. ',
     }
 ]

@@ -1,380 +1,302 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
-
+/* Reset */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
   overflow-x: hidden;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
 }
 
+/* ================== HERO ================== */
 .hero-section {
-  background-color: white !important;
-  height: 65vh;
-
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .hero-section {
-    height: 60vh;
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ================== ABOUT ================== */
+.about-section {
+  background: #111;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.card-about {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* ================== ABOUT ME ================== */
+.about-text-content {
+  background: #fff;
+  padding: 100px 20px;
+}
+
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.about-me-text {
+  text-align: left;
+}
+
+.about-me-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-me-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ================== EDUCATION ================== */
+.education-section {
+  background: #000;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.edu {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.education-item {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center;  
+  gap: 25px;              
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;     
+  justify-content: center;     
+}
+
+.education-item > div {
+  flex: 1 1 280px;          
+  max-width: 320px;  
+}
+
+
+/* ================== SKILLS ================== */
+.skill-section {
+  background: #e8e8e8;
+  padding: 100px 20px;
+}
+
+.skill-text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.skill-content-card {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center; 
+  gap: 20px;
+  background: #000;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-content-card > div {
+  flex: 1 1 220px;      
+  max-width: 280px;     
+}
+
+
+/* ================== PROJECTS ================== */
+.project-section {
+  background: #151414;
+  padding: 100px 20px;
+}
+
+.project-card-content {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card-content > div {
+  flex: 1 1 280px;   
+  max-width: 350px;   
+}
+
+
+/* ================== FOOTER ================== */
+.footer-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2e54a7;
+}
+
+.footer-below {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+/* ================== RESPONSIVE ================== */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .hero-text {
-    padding: 20px;
-    margin-left: 50px;
+  .hero-text h1 {
+    font-size: 2rem;
   }
 
   .image {
     display: none;
   }
 
-  .about-section {
-    background-color: black !important;
-    height: 195vh;
+  .about-me-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .card-about {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
+  .edu,
+  .skill-text {
+    font-size: 2rem;
   }
 
-  .about-text-content {
-    height: 150vh;
-  }
-
-  .about-me-image {
-    display: none;
-  }
-
-  .about-me-text {
-    font-size: 17px;
-    max-width: 800px;
-    width: auto;
-  }
-
-  .text-header-about h3 {
-    font-size: 10px;
-  }
-
-  .education-section {
-    height: 200vh;
-  }
-
-  .education-content h3 {
-    font-size: 50px;
-  }
-
-  .education-item {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .skill-section {
-    height: 300vh;
-  }
-
-  .skill-section-content h3 {
-    font-size: 50px;
-    width: 100%;
-  }
-
-  .project-section {
-    height: 300vh;
-  }
-
-  .project-card-content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .project-content h3 {
-    font-size: 50px;
-  }
-}
-
-.card-project {
-  background: #111;
-  color: black;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  width: 320px;
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
-  transition: transform .2s ease;
-}
-
-.card-project:hover {
-  transform: translateY(-5px);
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 15px;
-  text-align: center;
-  color: black;
-}
-
-.card-body {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-top: 10px;
-  flex-grow: 1;
-  text-align: center;
-  color: black;
-}
-
-.button-foot {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.project-card-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .card-project {
-    width: 100%;
-    max-width: 90%;
-    min-height: 450px;
-  }
-
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-body {
-    font-size: 14px;
-  }
-
-  .button-foot {
-    justify-content: center;
-  }
-}
-
-
-
-
-.about-section {
-  background-color: black !important;
-  height: auto;
-}
-
-
-.Text-scroll {
-  font-family: poppins;
-  font-weight: 800;
-}
-
-
-.about-text-content {
-  background-color: white !important;
-  height: auto;
-
-
-}
-
-
-
-.education-section {
-  background-color: black;
-  height: auto;
-}
-
-
-.edu {
-  font-family: poppins;
-  max-width: 60%;
-  font-weight: 800;
-  font-size: 100px;
-}
-
-.skill-text {
-  font-family: poppins;
-  max-width: 60%;
-  font-weight: 800;
-  font-size: 80px;
-}
-
-
-.hr {
-  width: 60%;
-}
-
-
-.skill-section {
-  background-color: #e8e8e8;
-  height: auto;
-}
-
-
-.skill-content-card {
-  background-color: black;
-  height: auto;
-  width: auto;
-  border-radius: 10px;
-}
-
-
-
-.project-section {
-  background-color: #151414;
-  height: auto;
-}
-
-.btn-gradient {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 6px 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.btn-gradient:hover {
-  background: linear-gradient(135deg, #764ba2, #667eea);
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-}
-
-.btn-gradient:active {
-  transform: translateY(0) scale(0.97);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-.footer-section {
-  background: #f8f9fa;
-  padding: 40px 20px;
-  width: 100%;
-}
-
-.footer-logo {
-  font-size: 50px;
-  font-weight: 800;
-  margin: 10px 0;
-  font-family: Poppins, sans-serif;
-  text-align: center;
-  color: #2e54a7;
-}
-
-.hr-full {
-  border: none;
-  border-top: 2px solid #2e54a7;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin: 10px 0;
-}
-
-.hr-mini {
-  border: none;
-  border-top: 2px solid #2e54a7;
-  width: 60%;
-  margin: 5px 0;
-}
-
-.hr-contact {
-  border: none;
-  border-top: 1px solid #ccc;
-  width: 80%;
-  margin: 5px 0;
-}
-
-.footer-text {
-  color: #312323;
-  font-size: 14px;
-  font-family: Poppins, sans-serif;
-  max-width: 400px;
-}
-
-.contact h3,
-.sosmed h3 {
-  font-size: 24px;
-  font-family: Poppins, sans-serif;
-  font-weight: 600;
-  color: #2e54a7;
-  margin-bottom: 10px;
-}
-
-.contact p,
-.sosmed p {
-  font-size: 16px;
-  font-family: Poppins, sans-serif;
-  color: #312323;
-  margin: 5px 0;
-}
-
-
-@media screen and (max-width: 992px) {
   .footer-below {
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .footer-text-quote {
-    max-width: 100%;
+    grid-template-columns: 1fr;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-logo {
-    font-size: 32px;
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
   }
 
-  .footer-below {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .about-me-content {
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 
-  .footer-text {
-    font-size: 13px;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .contact h3,
-  .sosmed h3 {
-    font-size: 20px;
-  }
-
-  .contact p,
-  .sosmed p {
-    font-size: 14px;
+  .edu,
+  .skill-text {
+    font-size: 2.5rem;
   }
 }
+
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .edu {
+    font-size: 3.5rem;
+  }
+
+  .skill-text {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project-card-content > div {
+    flex: 1 1 45%;  
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project-card-content {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-card-content > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .card-desc {
+    display: none;
+  }
+}
+

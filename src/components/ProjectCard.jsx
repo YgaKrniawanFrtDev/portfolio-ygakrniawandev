@@ -17,14 +17,6 @@ function ProjectCard({ image, textHeader, desc }) {
                 <p class="card-body">
                     {desc}
                 </p>
-                <div className="button-foot mt-4 d-flex justify-content-end gap-1">
-                    <span className="btn-gradient" onClick={handleClick}>
-                        Demo
-                    </span>
-                    <span className="btn-gradient" onClick={handleClick}>
-                        Code
-                    </span>
-                </div>
                 <p class="footer">©2025 <span class="by-name">Yoga Kurniawan</span></p>
             </div>
 
