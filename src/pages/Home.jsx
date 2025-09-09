@@ -5,7 +5,7 @@ import TextHero from "../components/TextHero"
 import TextScroll from "../components/TextScroll"
 import Card from "../components/Card"
 import { DataCard } from "../data/CardData"
-import Image from "../components/ImageAbout"
+// import Image from "../components/ImageAbout"
 import TextAbout from "../components/TextAbout"
 import ButtonScroll from "../components/ButtonScroll"
 import EducationCard from "../components/EducationCard"
@@ -70,7 +70,7 @@ function Home() {
                         <ButtonScroll />
                     </div>
                     <div className="about-me-image" data-aos="fade-up">
-                        <Image />
+                        {/* <Image /> */}
                     </div>
                 </div>
             </section>
