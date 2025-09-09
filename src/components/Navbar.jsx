@@ -20,7 +20,7 @@ function Navbar() {
 
     return (
         <nav
-            className={`navbar navbar-expand-lg shadow-lg w-100 fixed-top ${scrolled ? "navbar-scrolled" : "bg-body-transparent"
+            className={`navbar navbar-expand-lg shadow-lg fixed-top ${scrolled ? "navbar-scrolled" : "bg-body-transparent"
                 }`}
         >
             <div className="container">
