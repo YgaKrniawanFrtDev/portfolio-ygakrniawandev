@@ -19,7 +19,7 @@ import Footer from "../components/Footer"
 function Home() {
     const containerRef = useRef(null);
     return (
-        <>
+        <>f
             {/* Navbar */}
             <section className="navbar">
                 <Navbar />
